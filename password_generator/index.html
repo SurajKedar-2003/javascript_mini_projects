@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Password Generator</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    
+    <div class="container">
+        <h1>Generate a <br> <span>Random Password</span></h1>
+        <div class="display">
+            <input type="text" id="Password" placeholder="Password">
+            <img src="images/copy.png" alt="copy img" onclick="copyPassword()">
+        </div>
+        
+        <button id="generate" onclick="passwordGenerator()"> <img src="images/generate.png">Generate</button>
+
+    </div>
+
+</body>
+<!-- javascript code here -->
+<script>
+    const PasswordBox = document.getElementById('Password');
+
+    function passwordGenerator(){
+        let password = "";
+        let length = 12;
+        const upperCase = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+        const lowerCase = "abcdefghijklmnopqrstuvwxyz";
+        const symbol = "@!#$%^&*+_-=(\|<[)`~";
+        const allChars = upperCase + lowerCase + symbol;
+
+        password += upperCase[Math.floor(Math.random()*upperCase.length)];
+        password += lowerCase[Math.floor(Math.random()*lowerCase.length)];
+        password += symbol[Math.floor(Math.random()*symbol.length)];
+
+        while(length > password.length){
+            password += allChars[Math.floor(Math.random()*allChars.length)];
+        }
+
+        PasswordBox.value = password; 
+    }
+
+
+    //copy function 
+
+    function copyPassword(){
+        PasswordBox.select();
+        console.log(PasswordBox.value);
+        navigator.clipboard.writeText(PasswordBox.value)// new way to copy the text to clip board
+    }
+
+</script>
+</html>
