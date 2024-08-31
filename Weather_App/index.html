@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Application</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+</head>
+<body >
+    <video id="bg-video" autoplay muted loop>
+        <source src="img/clearSky.mp4" type="video/mp4" id="video_link">
+    </video>
+    <div class="container">
+        <div class="side">
+            <div class="searchbar">
+                <input type="text" name="userlocation" id="userlocation" placeholder="Enter User Location">
+                <select class="converter" id="temp_converter">
+                    <option value="°C">°C</option>
+                    <option value="°F">°F</option>
+                </select>
+                <i class="fa fa-search" id="search_icon"></i>
+            </div>
+            <div class="weather_img"></div>
+            <h2 class="temperature"></h2>
+            <div class="feels_like"></div>
+            <div class="description"></div>
+            <div class="date"></div>
+            <div class="city"></div>
+        </div>
+
+
+        <div class="main">
+            <h2 class="heading" >Today's Highlights</h2>
+            <div class="today">
+                <div class="today_Humidity">
+                    Humidity
+                    <i class="fas fa-water"></i>
+                    <h1 id="HValue"></h1>
+                </div>
+
+                <div class="today_windspeed">
+                    Wind Speed
+                    <i class="fas fa-wind"></i>
+                    <h1 id="WSValue"></h1>
+                </div>
+                <div class="today_sun">
+                   <span>
+                    <i class="fas fa-sun"></i>
+                    <p><span id="SRValue"></span>Sunrise</p>
+                   </span>
+
+                   <span>
+                    <i class="far fa-sun"></i>
+                    <p><span id="SSValue"></span>Sunset</p>
+                   </span>
+                </div>
+                <div class="today_cloud">
+                    Clouds
+                    <i class="fas fa-cloud"></i>
+                    <h1 id="CValue"></h1>
+                </div>
+                <div class="today_visibility">
+                    Visibility
+                    <i class="fas fa-eye"></i>
+                    <h1 id="VValue"></h1>
+                </div>
+                <div class="today_pressure">
+                    Pressure
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h1 id="PValue"></h1>
+                </div>
+                
+            </div>
+           
+            <h2 class="heading">This Week</h2>
+            <div class="week">
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
