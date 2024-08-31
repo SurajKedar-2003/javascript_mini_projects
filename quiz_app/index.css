@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #49167c;
+}
+
+.quiz_div{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(124, 117, 117);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.option_btn{
+    border: none;
+    outline: none;
+    background-color: beige;
+    width: 500px;
+    height: 30px;
+    margin-bottom: 10px;
+    padding: 15px 10px;
+    display: flex;
+    align-items: center;
+}
+
+.next_btn{
+    width: 60px;
+    height: 30px;
+}
+
+.score_card{
+    width: 50%;
+    height: 50%;
+    background-color: rgb(124, 117, 117);
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
