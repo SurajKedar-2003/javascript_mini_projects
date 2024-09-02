@@ -1,0 +1,67 @@
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic);
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(190, 211, 250);
+}
+
+.quote_box{
+    width: 50%;
+    min-height: 45%;
+    padding: 20px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    border-radius: 8px;
+    box-shadow: 3px 8px 8px rgba(9, 9, 9, 0.151);
+}
+
+.quote_box span{
+    margin-left: 70%;
+    font-size: 20px;
+}
+
+#quote{
+    font-size: 22px;
+    font-weight: 540;
+    text-align: center;
+}
+
+#author{
+    font-size: 17px;
+}
+
+
+button{
+    padding: 15px 25px;
+    margin: 5px;
+    border-radius: 25px;
+    border: 1px solid rgb(26, 115, 232);
+    outline: none;
+
+}
+
+button:hover{
+    background-color: rgb(26, 115, 232);
+    color: white;
+    border: none;
+}
+
+img{
+    width: 20px;
+    height: 10px;
+    margin-right: 10px;
+}
