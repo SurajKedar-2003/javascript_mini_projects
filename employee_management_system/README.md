@@ -13,6 +13,8 @@ The Employee Management System is a web-based application that allows users to m
 
 - **View Employee Data**: The application automatically loads and displays employee data from local storage when the page is loaded, ensuring that previously entered data is readily available.
 
+- **Search Employee Data**: Users can search for employees based on any key (e.g., name, email, mobile number) in real-time. The application filters and displays matching results as the user types, making it easy to find specific employee records quickly.
+
 ## Technologies Used
 
 - **HTML/CSS**: For structuring and styling the user interface.
