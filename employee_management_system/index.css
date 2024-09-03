@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    padding: 20px;
+    background-color: #f5f4f4;
+    
+}
+
+.employee_card{
+    width: 90%;
+    min-height: 80%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    gap: 20px;
+    overflow-x: hidden;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #f4e9e9;
+
+}
+
+.navbar #search_bar{
+    padding: 8px 24px;
+    border: none;
+    outline: none;
+    font-size: 15px;
+    margin-right: 5px;
+}
+
+.navbar input[type='button']{
+    padding: 8px 24px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+.employee_table{
+    width: 80%;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-bottom: 1px solid #ddd;
+}
+tr{
+    border-bottom:1px solid #ddd;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+th, td{
+    padding: 16px;
+    text-align: center;
+}
+
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+
+tr:nth-child(even){
+    border-bottom: 1px solid black;
+    border-collapse: collapse;
+    background-color: #f2f2f2;
+} 
+
+
+.add_employee_modal{
+    width: 50%;
+    height: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 24px;
+    gap: 20px;
+    background-color: white;
+}
+
+#addForm{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+#addForm input{
+    padding: 8px 24px;
+    font-size: 15px;
+    outline: none;
+}
+#addForm input[type=submit]{
+    padding: 8px 24px;
+    margin: auto;
+    width: 20%;
+}
+
+.table_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+}
+
+.table_buttons button{
+    padding: 8px 24px;
+    cursor: pointer;
+}
