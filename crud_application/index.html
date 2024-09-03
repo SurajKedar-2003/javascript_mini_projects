@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD application</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <form id="form">
+            <label for="name">Name: </label>
+            <input type="text" name="name" id="name" value="">
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age">
+            <label for="country">Country: </label>
+            <input type="text" name="country" id="country">
+            <input type="submit" value="Add">
+        </form>
+
+        <div class="name_list">
+            <table id="table">
+                <th>Name</th>
+                <th>Age</th>
+                <th>country</th>
+                <th>Actions</th>
+            </table>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
