@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: monospace;
+}
+
+.container{
+    width: 100vw;
+    height: 100vh;
+    background-image: radial-gradient(violet, rgb(205, 36, 179));
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 70px;
+    
+}
+
+h1{
+    font-size: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: wheat;
+}
+h1::selection{
+    color: orangered;
+}
+
+
+.password{
+    width: 320px;
+    height: 60px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    box-shadow: 4px 2px 4px 8px rgba(0, 0, 0, 0.072);
+}
+
+input{
+    width: 350px;
+    height: 50px;
+    font-size: 20px;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: #fff;
+}
+
+
+.password img{
+    width: 24px;
+    cursor: pointer;
+   
+}
+.heading{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.heading img{
+    width: 80px;
+    height: 80px;
+}
+
+.eye-blink {
+    position: relative;
+    width: 80px;
+    height:80px;
+    /* background-color: white; */
+    
+}
+
+.eye {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: opacity 0.4s ease-in-out;
+}
+
+.eye_open {
+    animation: blink-open 4s infinite;
+}
+
+.eye_close {
+    top: 28px;
+    opacity: 0;
+    animation: blink-close 4s infinite;
+}
+
+@keyframes blink-open {
+    0% {
+        opacity: 1;
+    }
+    85% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@keyframes blink-close {
+    0%, 85% {
+        opacity: 0;
+    }
+    90%, 100% {
+        opacity: 1;
+    }
+}
+
+
